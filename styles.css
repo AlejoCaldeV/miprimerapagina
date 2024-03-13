@@ -1,0 +1,162 @@
+* ::before,
+::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: brown;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+
+#logo {
+    width: 50px;
+    height: 50px;
+    padding: 0.5em;
+}
+
+header nav ul {
+    display: flex;
+    gap: 1.1em;
+    color: white;
+    padding: 20px;
+}
+
+.section-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    flex-wrap: wrap;
+
+}
+
+.section-1 p {
+    width: 200px;
+    margin-right: 2em;
+}
+
+#gojo {
+    width: 15rem;
+    height: 15rem;
+}
+
+
+#muertos {
+    width: 100%;
+    height: 20em;
+}
+
+#trabajos {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+.trabajos {
+    display: flex;
+    flex-direction: column;
+}
+
+.imagen-trabajos {
+    width: 250px;
+}
+
+.container-trabajos {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.contenido-trabajos1 {
+    margin-bottom: 3rem;
+}
+
+.contenido-trabajos2 {
+
+    margin-bottom: 3rem;
+}
+
+.contenido-trabajos3 {
+    margin-bottom: 3rem;
+}
+
+.saber-mas-trabajos {
+    margin-top: 10px;
+    display: block;
+}
+
+.texto-trabajos {
+    width: 250px;
+}
+
+footer {
+    background-color: gray;
+}
+
+#check {
+    display: none;
+}
+
+.checkbtn {
+    font-size: 25px;
+    color: rgb(255, 0, 102);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .checkbtn {
+        display: block;
+    }
+
+    #encabezado ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(26, 26, 65);
+        text-align: center;
+        top: 80px;
+        left: 100%;
+        transition: all 0.5s;
+    }
+
+    #check:checked~ul {
+        left: 0%;
+        display: block;
+    }
+
+    #encabezado nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    #encabezado nav ul li a {
+        font-size: 20px;
+    }
+}
