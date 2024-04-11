@@ -143,6 +143,9 @@ footer {
         top: 80px;
         left: 100%;
         transition: all 0.5s;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
 
     #check:checked~ul {
@@ -159,4 +162,7 @@ footer {
     #encabezado nav ul li a {
         font-size: 20px;
     }
+}
+.greeting{
+    background-color: grey;
 }
